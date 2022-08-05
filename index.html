@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChakaDeals | Home</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="relative container-fluid mx-auto p-4">
+    <div class="flex items-center justify-between">
+      <div class="transform-gpu">
+        <a href="."><img src="img/LnW.svg" alt="" /></a>
+      </div>
+      <div class="hidden space-x-6 md:flex justify-center items-center md:w-1/3">
+        <form action="" class="flex border-1 border-black bg-white rounded-full w-full">
+          <input type="text"
+            class="p-2 font-normal Gotham-Light bg-none outline-none focus-none w-full text-black text-xs md:text-sm"
+            placeholder="Browse items here...">
+          <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
+        </form>
+      </div>
+      <div class="hidden items-center space-x-6 md:flex">
+        <div class="p-2 px-1 ">
+          <a href="#"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="login.html" class="px-1 text-black text-xs Gotham-Light">Log in</a>
+        <a href="contact.html" class="text-black Gotham-Light text-xs">Support</a>
+        <a href="signup.html" class="text-black Gotham-Light text-xs">Sign Up</a>
+      </div>
+      <button id="menu-btn" class="block md:hidden cursor-pointer focus:outline-none">
+        <img src="img/menu.svg" class="cursor-pointer" alt="">
+      </button>
+    </div>
+    <div class="md:hidden">
+      <div id="menu"
+        class="hidden transition-all flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md Nexa-bold hover:-translate-y-1">
+        <form action="" class="flex border-1 border-black bg-white rounded-full w-full mx-4">
+          <input type="text"
+            class="p-2 font-normal Gotham-Light bg-none outline-none focus-none w-full text-black text-xs md:text-sm"
+            placeholder="Browse items here...">
+          <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
+        </form>
+        <div class="p-2 px-3 ">
+          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="login.html" class="p-2 px-3 text-black text-sm Gotham-Light">Log in</a>
+        <a href="signup.html" class="text-black Gotham-Light text-sm">Support</a>
+        <a href="signup.html" class="text-black Gotham-Light text-sm">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <div class="p-4 mx-auto flex justify-start">
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">&#9776;</a></span>
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">Sell on ChakaDeals</a></span>
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">Track my Order</a></span>
+  </div>
+  <hr>
+
+  <!-- First section of the Page-->
+  <section class="p-4 mx-auto pb-2">
+    <div class="container-fluid flex flex-col md:flex-row md:h-96">
+      <!-- slider begins here -->
+      <div class="swiper mySwiper w-full">
+      <div class="swiper-wrapper w-1/3">
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-120"
+            src="img/soe.png"
+            alt="apple watch photo"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-120"
+            src="img/poi.png"
+            alt="apple watch photo"
+          />
+        </div>
+        <div class="swiper-slide">
+           <img
+            class="object-cover w-full h-120"
+            src="img/soe.png"
+            alt="apple watch photo"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="object-cover w-full h-120"
+            src="img/poi.png"
+            alt="apple watch photo"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+      <!-- slider ends here -->
+      <div class="flex flex-col justify-between items-center mt-2 md:mt-0 md:ml-4 md:w-1/3">
+        <div class="oven rounded-curl text-white p-4 Gotham-Light h-60 justify-center font-bold mb-2 w-full  flex flex-col">
+          <h2 class="text-left">Get Amazing Deals on <br> House Application!</h2>
+          <button type="submit" class="bg-orange w-40 rounded-full p-2 md:w-40 mt-2 md:text-xs">Shop Now</button>
+        </div>
+        <div class="bg-yao rounded-curl Gotham-Light font-bold text-white h-60 justify-between w-full flex flex-row">
+          <div class="bg-yao w-full justify-center p-4 flex flex-col ">
+            <h2 class="text-left">Need Health <br> Products?</h2>
+            <button class="bg-white text-black rounded-full p-2 mt-2 w-40 md:w-20 md:text-xs">Shop Now</button>
+          </div>
+          <div class="mixed w-full"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="flex mt-8 p-4 container-fluid bg-hintblue">
+    <span class="Gotham-Bold text-white text-xl">HOTPICKS</span>
+  </div>
+  <!-- First Product Section -->
+  <section class="p-4 mx-auto">
+    <div class="container-fluid flex flex-wrap w-full justify-center">
+      <!-- items here -->
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/sneakers.jfif" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/sneakers.jfif" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/pop.png" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/kop.png" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/gagdets.svg" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <!-- items stop here -->
+    </div>
+    <p class="text-hintblue text-center mt-4 text-xl underline Gotham-Bold double"><a href="#"> LOAD MORE</a></p>
+  </section>
+
+  <div class="flex mt-8 p-4 container-fluid bg-hintblue items-center justify-center">
+    <span class="Gotham-Bold text-white text-xl mr-8"><i class="fa fa-flash text-yellow-300"></i> Flash Sales</span>
+    <span class="text-center Gotham-Bold text-xl text-white">Time Left <span class="text-orange">00:00:00 </span>
+    </span>
+  </div>
+  <section class="p-4 mx-auto">
+    <div class="container-fluid flex flex-wrap w-full justify-center">
+      <!-- items here -->
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/sneakers.jfif" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/sneakers.jfif" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/pop.png" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/kop.png" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/gagdets.svg" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <!-- items stop here -->
+    </div>
+    <p class="text-hintblue text-center mt-4 text-xl underline Gotham-Bold double"><a href="#"> LOAD MORE</a></p>
+  </section>
+
+  <section class="p-4 mx-auto flex flex-col md:flex-row w-full justify-center">
+    <div class="bg-pinkFlavor text-jellyred w-full mx-2 my-2 flex h-50 justify-between">
+      <div class="flex w-1/3 md:w-full flex-col justify-between  p-4 items-start ">
+        <span class="Gotham-Light md:text-xs"> Wanna look <br> <span
+            class="Gotham-Bold text-3xl md:text-sm">Fantabulous</span>
+        </span>
+        <button class="text-black rounded-full p-2 text-xs Gotham-Light bg-white w-40">Shop Now</button>
+      </div>
+      <div class="init1 w-1/3 md:w-full  flex items-start">
+        <img src="img/dress.svg" class="h-40 w-60 md:w-full p-4" p-2alt="">
+      </div>
+    </div>
+
+    <div class="bg-mintbl w-full mx-2 my-2 flex h-50 justify-between">
+      <div class="flex w-1/3 md:w-full flex-col justify-between w-full p-4 items-start ">
+        <span class="text-hintblue text-xs md:text-sm">Everyone loves a great <br> <span
+            class="Gotham-Bold text-2xl">Deal </span>
+        </span>
+        <button class="text-hintblue rounded-full p-2 text-xs Gotham-Light bg-white w-40">Shop Now</button>
+      </div>
+      <div class="init2 w-1/3 md:w-full  flex items-start">
+        <img src="img/basket.svg" class="h-40 w-60 md:w-full p-4" alt="">
+      </div>
+    </div>
+
+    <div class="bg-shade mx-2 my-2 w-full text-white flex h-50 justify-between">
+      <div class="flex flex-col w-1/3 md:w-full justify-between  p-4 items-start ">
+        <span class="Gotham-Bold text-xl md:text-sm">For Your <br> <span class="Gotham-Bold">Comfort</span>
+        </span>
+        <button class="text-black rounded-full p-2 text-xs Gotham-Light bg-white w-40">Shop Now</button>
+      </div>
+      <div class="init3 w-1/3  md:w-full flex items-start">
+        <img src="img/gagdets.svg" class="h-40 w-60 md:w-full p-4" alt="">
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid p-4 w-full">
+    <div class="Gotham-Bold text-white minted items-center flex flex-col justify-center h-60 w-full">
+      <span class="md:text-2xl">Shop for your favourite fragrance</span>
+      <button class="bg-orange mt-2 text-white Gotham-Light text-xs p-2 rounded-full w-40">Shop Now</button>
+    </div>
+  </div>
+  <div class="flex mt-8 p-4 container-fluid bg-hintblue items-center justify-center">
+    <span class="Gotham-Bold text-white text-xl">Recommended For you</span>
+
+    </span>
+  </div>
+  <section class="p-4 mx-auto">
+    <div class="container-fluid flex flex-wrap w-full justify-center">
+      <!-- items here -->
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/sneakers.jfif" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/sneakers.jfif" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/pop.png" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/kop.png" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center mx-2 my-2 w-full md:w-60">
+        <img src="img/gagdets.svg" class="w-40 md:h-40" alt="">
+        <span class="Gotham-Light font-bold text-sm mt-2">Nike Women's Sneakers</span>
+        <p class="text-orange Gotham-Light"><span class="text-orange double line-through">N</span> 4,650</p>
+        <span class="bg-pinkFlavor p-1 text-red-500 text-xs Gotham-Light font-bold">-15%</span>
+        <span class="line-through text-cutegray Gotham-Light text-xs pb-1">N 5,000</span>
+        <button
+          class="text-white bg-orange rounded-full p-2 items-center w-40 Gotham-Light font-bold text-sm flex justify-center">
+          Add to Cart <i class="fa fa-heart ml-4"></i>
+        </button>
+      </div>
+      <!-- items stop here -->
+    </div>
+    <p class="text-hintblue text-center mt-4 text-xl underline Gotham-Bold double"><a href="#"> LOAD MORE</a></p>
+  </section>
+  <section class="mx-auto p-4 mt-10 mb-10 flex flex-wrap justify-between md:justify-center w-full">
+    <div class="flex flex-col justify-between items-center md:mx-10">
+      <img src="img/shipping.svg" alt="" class="h-20 w-20 pb-2">
+      <h3 class="text-hintblue uppercase Gotham-Bold">fast delivery</h3>
+    </div>
+    <div class="flex flex-col justify-between items-center md:mx-10">
+      <img src="img/topdeals.svg" alt="" class="h-20 w-20 pb-2">
+      <h3 class="text-hintblue uppercase Gotham-Bold">fast delivery</h3>
+    </div>
+    <div class="flex flex-col justify-between items-center md:mx-10">
+      <img src="img/support.svg" alt="" class="h-20 w-20 pb-2">
+      <h3 class="text-hintblue uppercase Gotham-Bold">fast delivery</h3>
+    </div>
+</section>
+<section class="mx-auto p-4 mt-8 mb-8 flex flex-col items-center justify-center w-full">
+  <h3 class="text-black Gotham-Light font-bold md:text-2xl">
+    Subscribe to our Newsletter to get reminders on Deals
+  </h3>
+  <form action="" class="mt-2 border-1 rounded-full w-full md:w-1/3 border-orange flex justify-between">
+    <input type="text" class="bg-none w-full text-black Gotham-Light text-xs outline-none p-2" placeholder="Email Address">
+    <button class="text-white Gotham-Light text-xs rounded-full bg-orange p-2 w-1/3">Subscribe</button>
+  </form>
+</section>
+<!-- footer -->
+<footer class="flex flex-col p-4 items-center inline-block bg-shadetrue text-white mx-auto">
+  <div class="my-2 flex flex-col md:flex-row w-full justify-around">
+  <div class="Gotham-Bold flex flex-col md:items-center md:text-center">
+    <h1>My Account</h1>
+    <p class="Gotham-Light"><a href="#">Sign Up</a></p>
+    <p class="Gotham-Light"><a href="#">Log in</a></p>
+  </div>
+  <div class="Gotham-Bold flex flex-col md:items-center">
+    <h1>Help</h1>
+    <p class="Gotham-Light"><a href="#">Contact Us</a></p>
+    <p class="Gotham-Light"><a href="#">Support</a></p>
+    <p class="Gotham-Light"><a href="#">Track My Order</a></p>
+  </div>
+  <div class="Gotham-Bold flex flex-col md:items-center md:text-center">
+    <h1>About</h1>
+    <p class="Gotham-Light"><a href="#">Our Story</a></p>
+    <p class="Gotham-Light"><a href="#">Media</a></p>
+    <p class="Gotham-Light"><a href="#">Refund Policy</a></p>
+  </div>
+</div>
+<div class="my-2 flex flex-col md:flex-row w-full justify-around">
+  <div class="Gotham-Bold flex flex-col md:items-center md:text-center">
+    <h1>Legal Stuff</h1>
+    <p class="Gotham-Light"><a href="#">Terms Of Service</a></p>
+    <p class="Gotham-Light"><a href="#">Privacy Notice</a></p>
+    <p class="Gotham-Light"><a href="#">Shipping Notice</a></p>
+  </div>
+  <div class="Gotham-Bold flex flex-col text-center md:items-center justify-between">
+    <h1>Blog</h1>
+    <p class="Gotham-Light">&copy; 2022 Chakadeals all Right Reserved</p>
+  </div>
+  <div class="Gotham-Bold flex flex-col md:items-center md:text-center justify-center">
+    <h1>Follow Us</h1>
+    <div class="flex">
+    <a href="#" class="px-2"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="px-2"><img src="img/pininterest.svg" alt=""></a>
+    <a href="#" class="px-2 stroke-white path-white"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4446 0.845459C6.10306 0.845459 0.962402 5.88026 0.962402 12.0906C0.962402 18.3014 6.10306 23.3362 12.4446 23.3362C18.7858 23.3362 23.9269 18.3014 23.9269 12.0906C23.9269 5.88026 18.7858 0.845459 12.4446 0.845459ZM12.5788 18.6679C8.87777 18.6679 5.88008 15.7246 5.88008 12.0908C5.88008 8.45698 8.87777 5.5137 12.5788 5.5137C14.3875 5.5137 15.8986 6.16726 17.0586 7.22786L15.17 9.08183V9.07764C14.4668 8.41989 13.5751 8.08291 12.5788 8.08291C10.3683 8.08291 8.57223 9.9162 8.57223 12.0868C8.57223 14.2569 10.3683 16.0947 12.5788 16.0947C14.5842 16.0947 15.9489 14.9683 16.2297 13.4227H12.5788V10.8576H18.8795C18.9633 11.2973 19.0091 11.7578 19.0091 12.2387C19.0091 15.9959 16.4473 18.6679 12.5788 18.6679Z" fill="#0B4856"/>
+      </svg>
+      </a>
+    <a href="#" class="px-2"><img src="img/linkedin.svg" alt=""></a>
+  </div>
+  </div>
+</div>
+</footer>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 6500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+</html>

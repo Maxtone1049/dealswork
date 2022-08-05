@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp | ChakaDeals</title>
+  <link rel="shortcut icon" href="img/brandchaka.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+
+<body>
+  <!-- navbar -->
+  <nav class="relative container-fluid mx-auto p-4">
+    <div class="flex items-center justify-between">
+      <div class="scale-75 transform-gpu">
+        <a href="."><img src="img/LnW.svg" alt="" /></a>
+      </div>
+      <div class="hidden space-x-6 md:flex justify-center items-center md:w-1/3">
+        <form action="" class="flex border-1 border-black bg-white rounded-full w-full">
+          <input type="text"
+            class="p-2 font-normal Gotham-Light bg-none outline-none focus-none w-full text-black text-xs md:text-sm"
+            placeholder="Browse items here...">
+          <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
+        </form>
+      </div>
+      <div class="hidden items-center space-x-6 md:flex">
+        <div class="p-2 px-3 ">
+          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="login.html" class="p-2 px-3 text-black text-sm Gotham-Light">Log in</a>
+        <a href="contact.html" class="text-black Gotham-Light text-sm">Support</a>
+        <a href="signup.html" class="text-black Gotham-Light text-sm">Sign Up</a>
+      </div>
+      <button id="menu-btn" class="block md:hidden cursor-pointer focus:outline-none">
+        <img src="img/menu.svg" class="cursor-pointer" alt="">
+      </button>
+    </div>
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute hidden transition-all flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md Nexa-bold hover:-translate-y-1">
+        <form action="" class="flex border-1 border-black bg-white rounded-full w-full mx-4">
+          <input type="text"
+            class="p-2 font-normal Gotham-Light bg-none outline-none focus-none w-full text-black text-xs md:text-sm"
+            placeholder="Browse items here...">
+          <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
+        </form>
+        <div class="p-2 px-3 ">
+          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="login.html" class="p-2 px-3 text-black text-sm Gotham-Light">Log in</a>
+        <a href="contact.html" class="text-black Gotham-Light text-sm">Support</a>
+        <a href="signup.html" class="text-black Gotham-Light text-sm">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <div class="p-4 mx-auto flex justify-start">
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">&#9776;</a></span>
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">Sell on ChakaDeals</a></span>
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">Track my Order</a></span>
+  </div>
+  <hr>
+  <section class="w-full vert p-4">
+    <div class="w-full md:w-70 flex flex-col mt-6 items-center">
+      <img src="img/brandchaka.png" class="w-20" alt="">
+      <h1 class="text-white text-4xl md:text-2xl Gotham-Bold">Create new account</h1>
+      <h3 class="Gotham-Light text-white">Already have an account? <span class="underline"><a
+            href="login.html">LOGIN</a></span></h3>
+      <div class="Gotham-Light font-bold flex items-center justify-center">
+      <input type="radio" id="merc"  name="acct_type" value="merchant">
+  <label for="merc" class="text-white">Merchant</label><br>
+
+  <input type="radio" id="cust"  name="acct_type" value="customer">
+  <label for="cust" class="text-white">Customer</label>
+      </div>
+      <form action="#" class="cust_form Gotham-Light flex flex-col justify-center text-black mt-4 w-full">
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/usericon.svg" alt="">
+          <input type="text" placeholder="Full Name" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/usericon.svg" alt="">
+          <input type="text" placeholder="Username" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/message.svg" alt="">
+          <input type="email" placeholder="Email" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/phone.svg" alt="">
+          <input type="number" placeholder="Phone Number" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/box.svg" alt="">
+          <input type="text" placeholder="Occupation" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/lock.svg" alt="">
+          <input type="password" placeholder="Password" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="w-full flex items-center justify-center">
+<button type="submit" class="mt-4 bg-yao text-white Gotham-Bold w-60 p-4 rounded-full">SIGN UP</button>
+        </div>
+      </form>
+      <form action="#" class="merc_form Gotham-Light flex flex-col justify-center text-black mt-4 w-full">
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/usericon.svg" alt="">
+          <input type="text" placeholder="Business Name" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/usericon.svg" alt="">
+          <input type="text" placeholder="Full Name" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/usericon.svg" alt="">
+          <input type="text" placeholder="Username" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/message.svg" alt="">
+          <input type="email" placeholder="Email" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/phone.svg" alt="">
+          <input type="number" placeholder="Phone Number" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/box.svg" alt="">
+          <input type="text" placeholder="Position in the company" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="bg-white rounded-full p-4 flex my-2">
+          <img src="img/lock.svg" alt="">
+          <input type="password" placeholder="Password" class="pl-3 w-full outline-none text-black">
+        </div>
+        <div class="w-full flex items-center justify-center">
+<button type="submit" class="mt-4 bg-yao text-white Gotham-Bold w-60 p-4 rounded-full">SIGN UP</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="flex flex-col p-4 items-center inline-block bg-white text-shadetrue mx-auto">
+    <div class="my-2 flex flex-col md:flex-row w-full justify-around">
+      <div class="Gotham-Bold flex flex-col md:items-center md:text-center">
+        <h1>My Account</h1>
+        <p class="Gotham-Light"><a href="#">Sign Up</a></p>
+        <p class="Gotham-Light"><a href="#">Log in</a></p>
+      </div>
+      <div class="Gotham-Bold flex flex-col md:items-center">
+        <h1>Help</h1>
+        <p class="Gotham-Light"><a href="#">Contact Us</a></p>
+        <p class="Gotham-Light"><a href="#">Support</a></p>
+        <p class="Gotham-Light"><a href="#">Track My Order</a></p>
+      </div>
+      <div class="Gotham-Bold flex flex-col md:items-center md:text-center">
+        <h1>About</h1>
+        <p class="Gotham-Light"><a href="#">Our Story</a></p>
+        <p class="Gotham-Light"><a href="#">Media</a></p>
+        <p class="Gotham-Light"><a href="#">Refund Policy</a></p>
+      </div>
+    </div>
+    <div class="my-2 flex flex-col md:flex-row w-full justify-around">
+      <div class="Gotham-Bold flex flex-col md:items-center md:text-center">
+        <h1>Legal Stuff</h1>
+        <p class="Gotham-Light"><a href="#">Terms Of Service</a></p>
+        <p class="Gotham-Light"><a href="#">Privacy Notice</a></p>
+        <p class="Gotham-Light"><a href="#">Shipping Notice</a></p>
+      </div>
+      <div class="Gotham-Bold flex flex-col text-center md:items-center justify-between">
+        <h1>Blog</h1>
+        <p class="Gotham-Light">&copy; 2022 Chakadeals all Right Reserved</p>
+      </div>
+      <div class="Gotham-Bold flex flex-col md:items-center md:text-center justify-center">
+        <h1>Follow Us</h1>
+        <div class="flex">
+          <a href="#" class="px-2 bg-shadetrue text-white rounded-curl"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="px-2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12C0 17.084 3.163 21.426 7.627 23.174C7.522 22.225 7.427 20.768 7.669 19.732C7.887 18.796 9.076 13.767 9.076 13.767C9.076 13.767 8.717 13.048 8.717 11.986C8.717 10.317 9.684 9.072 10.888 9.072C11.912 9.072 12.406 9.841 12.406 10.762C12.406 11.792 11.751 13.331 11.412 14.757C11.129 15.952 12.011 16.926 13.189 16.926C15.322 16.926 16.961 14.677 16.961 11.431C16.961 8.558 14.897 6.549 11.949 6.549C8.535 6.549 6.531 9.11 6.531 11.757C6.531 12.788 6.928 13.894 7.424 14.496C7.522 14.615 7.536 14.719 7.507 14.84C7.416 15.219 7.214 16.034 7.174 16.201C7.122 16.421 7 16.467 6.773 16.361C5.274 15.663 4.337 13.472 4.337 11.712C4.337 7.927 7.087 4.45 12.266 4.45C16.429 4.45 19.664 7.416 19.664 11.381C19.664 15.517 17.056 18.845 13.437 18.845C12.221 18.845 11.078 18.213 10.687 17.467C10.687 17.467 10.085 19.758 9.939 20.32C9.668 21.362 8.937 22.669 8.447 23.466C9.57 23.812 10.763 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0Z"
+                fill="#0B4856" />
+            </svg>
+          </a>
+          <a href="#" class="px-2 stroke-shadetrue path-shadetrue"><svg width="24" height="24" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.4446 0.845459C6.10306 0.845459 0.962402 5.88026 0.962402 12.0906C0.962402 18.3014 6.10306 23.3362 12.4446 23.3362C18.7858 23.3362 23.9269 18.3014 23.9269 12.0906C23.9269 5.88026 18.7858 0.845459 12.4446 0.845459ZM12.5788 18.6679C8.87777 18.6679 5.88008 15.7246 5.88008 12.0908C5.88008 8.45698 8.87777 5.5137 12.5788 5.5137C14.3875 5.5137 15.8986 6.16726 17.0586 7.22786L15.17 9.08183V9.07764C14.4668 8.41989 13.5751 8.08291 12.5788 8.08291C10.3683 8.08291 8.57223 9.9162 8.57223 12.0868C8.57223 14.2569 10.3683 16.0947 12.5788 16.0947C14.5842 16.0947 15.9489 14.9683 16.2297 13.4227H12.5788V10.8576H18.8795C18.9633 11.2973 19.0091 11.7578 19.0091 12.2387C19.0091 15.9959 16.4473 18.6679 12.5788 18.6679Z"
+                fill="#0B4856" />
+            </svg>
+          </a>
+          <a href="#" class="px-2"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 0H2C0.895 0 0 0.895 0 2V20C0 21.105 0.895 22 2 22H20C21.105 22 22 21.105 22 20V2C22 0.895 21.105 0 20 0ZM6.954 18H4.004V8.508H6.954V18ZM5.449 7.151C4.498 7.151 3.729 6.38 3.729 5.431C3.729 4.482 4.499 3.712 5.449 3.712C6.397 3.712 7.168 4.483 7.168 5.431C7.168 6.38 6.397 7.151 5.449 7.151ZM18.004 18H15.056V13.384C15.056 12.283 15.036 10.867 13.523 10.867C11.988 10.867 11.752 12.066 11.752 13.304V18H8.804V8.508H11.634V9.805H11.674C12.068 9.059 13.03 8.272 14.465 8.272C17.452 8.272 18.004 10.238 18.004 12.794V18Z"
+                fill="#0B4856" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+           $('.merc_form').hide();
+
+$('#merc').click(function(e) {
+  e.preventDefault();
+  $(this).addClass('active');
+  $('.merc_form').show();
+  $('.cust_form').hide();
+});
+
+$('#cust').click(function(e) {
+  e.preventDefault();
+  $(this).addClass('active');
+  $('.merc_form').removeClass('active');
+  $('.cust_form').show();
+  $('.merc_form').hide();
+
+});
+</script>
+<script src="js/script.js"></script>
+</html>

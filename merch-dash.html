@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merchant Profile | ChakaDeals</title>
+  <link rel="shortcut icon" href="img/brandchaka.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body style="background: whitesmoke;">
+  <!-- navbar -->
+  <nav class="relative container-fluid mx-auto p-4">
+    <div class="flex items-center justify-between">
+      <div class="transform-gpu">
+        <a href="."><img src="img/LnW.svg" alt="" /></a>
+      </div>
+      <div class="hidden space-x-6 md:flex justify-center items-center md:w-1/3">
+        <form action="" class="flex border-1 border-black bg-white rounded-full w-full">
+          <input type="text"
+            class="p-2 font-normal Gotham-Light bg-none outline-none focus-none w-full text-black text-xs md:text-sm"
+            placeholder="Browse items here...">
+          <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
+        </form>
+      </div>
+      <div class="hidden items-center space-x-6 md:flex">
+        <div class="p-2 px-1 ">
+          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="login.html" class="px-1 text-black text-xs Gotham-Light">Log in</a>
+        <a href="contact.html" class="text-black Gotham-Light text-xs">Support</a>
+        <a href="signup.html" class="text-black Gotham-Light text-xs">Sign Up</a>
+      </div>
+      <button id="menu-btn" class="block md:hidden cursor-pointer focus:outline-none">
+        <img src="img/menu.svg" class="cursor-pointer" alt="">
+      </button>
+    </div>
+    <div class="md:hidden">
+      <div id="menu"
+        class="hidden transition-all flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md Nexa-bold hover:-translate-y-1">
+        <form action="" class="flex border-1 border-black bg-white rounded-full w-full mx-4">
+          <input type="text"
+            class="p-2 font-normal Gotham-Light bg-none outline-none focus-none w-full text-black text-xs md:text-sm"
+            placeholder="Browse items here...">
+          <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
+        </form>
+        <div class="p-2 px-3 ">
+          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="login.html" class="p-2 px-3 text-black text-sm Gotham-Light">Log in</a>
+        <a href="signup.html" class="text-black Gotham-Light text-sm">Support</a>
+        <a href="signup.html" class="text-black Gotham-Light text-sm">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <div class="p-4 mx-auto flex justify-start">
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">&#9776;</a></span>
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">Sell on ChakaDeals</a></span>
+    <span class="px-2 Gotham-Light font-bold text-sm"><a href="#">Track my Order</a></span>
+  </div>
+  <hr>
+  <div class="px-4">
+    <div class="drop-shadow-md mt-6 bg-white w-full rounded-curl flex justify-between items-center p-3 py-3">
+      <div>
+        <a href="#" class="px-3 Gotham-Light font-bold text-xs md:text-sm active-blue pb-2">Reports</a>
+        <a href="merch-profile.html" class="px-3 Gotham-Light font-bold text-xs md:text-sm">My Account</a>
+        <a href="contact.html" class="px-3 Gotham-Light font-bold text-xs md:text-sm">Help Center</a>
+      </div>
+      <div>
+        <img src="img/review.png" class="rounded-full w-10" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-between p-6 Gotham-Light bg-white mt-4 mx-4 rounded-curl font-bold text-xs">
+    <div class="bg-shadetrue p-3 text-white mx-1 w-full md:w-03 h-40 flex justify-center items-center rounded-curl">
+      <div>Ads</div>
+    </div>
+    <div class="check p-3 text-white mx-1 w-full md:w-03 h-40 flex flex-col justify-center justify-between items-center rounded-curl">
+      <span class="bg-orange p-2 rounded-curl"><i class="fa fa-plus"></i></span>
+      <span class="font-bold Gotham-Bold">Add Deal</span>
+      <span class="shrink Gotham-Light">Create a new Deal</span>
+      <button id="myBtn" class="bg-white p-2 rounded-curl Gotham-Bold w-full md:w-1/3 text-center cursor-pointer"><a href="#" class="text-orange">New Deal</a></button>
+    </div>
+    <div class="bg-shadetrue p-3 text-white mx-1 w-full md:w-03 h-40 flex justify-center items-center rounded-curl">
+      <div>Ads</div>
+    </div>
+  </div>
+<section class="flex p-6 flex-col md:flex-row">
+  <div class="md:w-1/3 md:mr-4">
+    <div class="flex flex-col justify-between">
+      <h2>Deals</h2>
+      <input type="text" class="outline-none my-2 text-xs md:text-l p-2 rounded-curl Gotham-Light text-black" name="search" id="" placeholder="Search..." />
+      <input type="text" class="outline-none my-2 text-xs md:text-l p-2 rounded-curl Gotham-Light text-black" placeholder="Select a data range..." />
+      <span class="flex mt-2">
+        <input type="checkbox" name="all" id="" checked />
+        <span class="flex Gotham-Light font-bold text-xs justify-between items-center w-full"> 
+         <span> &#9776; All</span>
+          <span class="bg-white Gotham-Light font-bold text-xs p-1 rounded-curl">354</span>
+        </span>
+        
+      </span>
+      <span class="flex text-xs my-2 Gotham-Bold"
+        ><input type="checkbox" name="all" id="" class="mr-2" />&#9776; Approved</span
+      >
+      <span class="flex text-xs my-1 Gotham-Bold border-b-2 pb-3 border-orange"
+        ><input type="checkbox" name="all" id="" class="" /><img
+          src="img/naira-svg.svg"
+          alt="" class="mx-2"
+        />
+        Funded</span
+      >
+      <div class="Gotham-Light font-bold">
+        <span  class="flex my-2"
+          ><img src="img/Vector.png" alt="" /><a href="#" class="mx-2 text-xs Gotham-Light font-bold"> Sales Report</a>
+        </span>
+        <span class="flex my-2"
+          ><img src="img/print.png" alt="" />
+          <a href="#" class="mx-2 text-xs Gotham-Light font-bold"> Print Sales Report</a></span
+        >
+      </div>
+    </div>
+
+</div>
+  <div class="w-full"> 
+    <table class="table w-full mt-3 md:mt-0">
+    <thead>
+      <tr>
+        <th class="Gotham-Light font-bold text-sm">ID</th>
+        <th class="Gotham-Light font-bold text-sm">Deals</th>
+        <th class="Gotham-Light font-bold text-sm">Date</th>
+        <th class="Gotham-Light font-bold text-sm">Start</th>
+        <th class="Gotham-Light font-bold text-sm">Pause</th>
+        <th class="Gotham-Light font-bold text-sm">Stop</th>
+        <th class="Gotham-Light font-bold text-sm">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-shadetrue rounded-curl">
+        <td class="Gotham-Light text-white p-2 text-xs md:text-sm">D001</td>
+        <td class="flex flex-col items-center justify-between p-2 mt-2">
+          <img src="img/sneakers.jfif" class="w-5" alt="" />
+          <p class="Gotham-Light text-xs pt-1 text-white">Nike Women's Sneakers</p>
+          <p class="Gotham-Bold text-white">
+            <span class="Gotham-Bold line-through">N</span> 4,650 <span class="bg-orange p-1 text-xs">-15%</span>
+          </p>
+          <p class="Gotham-Light line-through text-xs text-white"><span>N</span> 5,000</p>
+        </td>
+        <td class="p-2"><span class="text-xs Gotham-Light text-white">15 May 2022 02:30 pm</span></td>
+        <td>
+          <a href="#" class="text-white text-xs"><i class="fa fa-play"></i></a>
+        </td>
+        <td>
+          <a href="#" class="text-white text-xs"><i class="fa fa-pause"></i></a>
+        </td>
+        <td>
+          <a href="#" class="text-white text-xs"><i class="fa fa-stop"></i></a>
+        </td>
+        <td>
+          <a href="#" class="text-white text-xs" id="mybtt"><i class="fa fa-edit"></i></a>
+        </td>
+      </tr>
+      <tr class="border-b-1 border-orange bg-white">
+        <td class="Gotham-Light text-black p-2 text-xs md:text-sm">D002</td>
+        <td class="flex flex-col items-center justify-between p-2 mt-2">
+          <img src="img/joi.png" class="w-5" alt="" />
+          <p class="Gotham-Light text-xs pt-1 text-black">Nike Women's Sneakers</p>
+          <p class="Gotham-Bold text-black">
+            <span class="Gotham-Bold line-through">N</span> 4,650 <span class="bg-orange p-1 text-xs">-15%</span>
+          </p>
+          <p class="Gotham-Light line-through text-xs text-black"><span>N</span> 5,000</p>
+        </td>
+        <td class="p-2"><span class="text-xs Gotham-Light text-black">15 May 2022 02:30 pm</span></td>
+        <td>
+          <a href="#" class="text-black text-xs"><i class="fa fa-play"></i></a>
+        </td>
+        <td>
+          <a href="#" class="text-black text-xs"><i class="fa fa-pause"></i></a>
+        </td>
+        <td>
+          <a href="#" class="text-black text-xs"><i class="fa fa-stop"></i></a>
+        </td>
+        <td>
+          <a href="#" class="text-black text-xs" id="mybtt"><i class="fa fa-edit"></i></a>
+        </td>
+      </tr>
+      </tbody>
+  </table></div>
+</section>
+    <!-- Form to add New Product start here -->
+    <div id="myModal" class="modale">
+      <div class="modale-content md:w-1/3">
+        <span class="cllose text-2xl font-bold cursor-pointer">&times;</span>
+        <form action="" method="post">
+          <p class="Gotham-Light font-bold text-xl pb-2">Add New Product</p>
+          <div class="form">
+          <div>
+            <input type="file" class="border-1 border-orange rounded-full w-full p-2">
+            <input class="outline-none border-1 w-full border-orange text-sm md:text-l text-black Gotham-Light font-bold p-2 my-2 md:my-2 rounded-full" type="text" placeholder="enter title">
+            <input class="outline-none border-1 w-full border-orange text-sm md:text-l text-black Gotham-Light font-bold p-2 my-2 rounded-full" type="number" placeholder="enter amount">
+            <input class="outline-none border-1 w-full border-orange text-sm md:text-l text-black Gotham-Light font-bold p-2 my-2 rounded-full" type="number" placeholder="enter percentage">
+          </div>
+          <div>
+            <select name="" id="" class="outline-none w-full border-1 my-2 rounded-full border-orange p-2 Gotham-Light text-sm md:text-l font-bold">
+              <option value="">--Categories--</option>
+              <option value="">Food Stuffs</option>
+              <option value="">Hair Products</option>
+              <option value="">Phones</option>
+              <option value="">Kitchen Utensils</option>
+              <option value="">Computer Accessories</option>
+              <option value="">Baby and Toys</option>
+              <option value="">Electronics</option>
+            </select>
+            <input type="date" class="outline-none p-2 mb-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
+            <input type="date" class="outline-none p-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
+          </div>
+        </div>
+        <button class="bg-shadetrue text-white Gotham-Light my-2 w-full font-bold text-sm p-2 rounded-full" type="submit">Upload</button>
+          </form>
+      </div>
+    </div>
+    <!-- Form to add New Product stops here -->
+  
+      <!-- Form to add edit Product start here -->
+      <div id="myMo" class="modale">
+        <div class="modale-content md:w-1/3">
+          <span class="lose text-2xl font-bold text-right cursor-pointer">&times;</span>
+          <form action="" method="post">
+            <p class="Gotham-Light font-bold text-xl pb-2">Edit Product</p>
+            <div class="form">
+            <div>
+              <input type="file" class="border-1 border-orange rounded-full w-full p-2">
+              <input class="outline-none border-1 w-full border-orange text-sm md:text-l text-black Gotham-Light font-bold p-2 my-2 md:my-2 rounded-full" type="text" placeholder="enter title">
+              <input class="outline-none border-1 w-full border-orange text-sm md:text-l text-black Gotham-Light font-bold p-2 my-2 rounded-full" type="number" placeholder="enter amount">
+              <input class="outline-none border-1 w-full border-orange text-sm md:text-l text-black Gotham-Light font-bold p-2 my-2 rounded-full" type="number" placeholder="enter percentage">
+            </div>
+            <div>
+              <select name="" id="" class="outline-none w-full border-1 my-2 rounded-full border-orange p-2 Gotham-Light text-sm md:text-l font-bold">
+                <option value="">--Categories--</option>
+                <option value="">Food Stuffs</option>
+                <option value="">Hair Products</option>
+                <option value="">Phones</option>
+                <option value="">Kitchen Utensils</option>
+                <option value="">Computer Accessories</option>
+                <option value="">Baby and Toys</option>
+                <option value="">Electronics</option>
+              </select>
+              <input type="date" class="outline-none p-2 mb-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
+              <input type="date" class="outline-none p-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
+            </div>
+          </div>
+          <button class="bg-shadetrue text-white Gotham-Light my-2 w-full font-bold text-sm p-2 rounded-full" type="submit">Upload</button>
+            </form>
+        </div>
+      </div>
+      <!-- Form to add edit Product stops here -->
+</body>
+<script src="js/script.js"></script>
+</html>
