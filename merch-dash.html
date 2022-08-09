@@ -189,12 +189,69 @@
         </td>
       </tr>
       </tbody>
-  </table></div>
+  </table>
+</div>
+</section>
+<section class="mx-auto">
+  <table class="table w-full mt-3 md:mt-0">
+    <thead>
+      <tr>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">S/N</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Date</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Customer</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Product Title</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Shipping or Pickup</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Location</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Price</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Paid?</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Transaction Reference</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Confirm Dispatch of Product</th>
+        <th class="Gotham-Light font-bold text-xs md:text-l px-1">Status Update</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr class="mt-4 mb-4">
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Hello</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">2022-06-13 19:12:42</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Maxwell Anthony</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Sprinter van</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Shipping</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Ikot oku ikono, Uyo, Akwa Ibom State</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">N 12.3000000000</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">No</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">266548997855995</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">
+          <select name="" id="" class="outlint-none">
+          <option value="">Order Sent</option>
+          <option value="">Order Not Sent</option>
+        </select> <button class="">Update</button></td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Order not Sent</td>
+      </tr>
+      <tr class="mt-4 mb-4">
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Hello</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">2022-06-13 19:12:42</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Maxwell Anthony</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Sprinter van</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Shipping</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Ikot oku ikono, Uyo, Akwa Ibom State</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">N 12.3000000000</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">No</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">266548997855995</td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">
+          <select name="" id="" class="outlint-none">
+          <option value="">Order Sent</option>
+          <option value="">Order Not Sent</option>
+        </select> <button class="">Update</button></td>
+        <td class="text-black Gotham-Light p-1 text-xs md:text-sm  text-center">Order not Sent</td>
+      </tr>
+     
+      </tbody>
+  </table>
 </section>
     <!-- Form to add New Product start here -->
     <div id="myModal" class="modale">
       <div class="modale-content md:w-1/3">
-        <span class="cllose text-2xl font-bold cursor-pointer">&times;</span>
+        <span class="cllose text-3xl font-bold cursor-pointer">&times;</span>
         <form action="" method="post">
           <p class="Gotham-Light font-bold text-xl pb-2">Add New Product</p>
           <div class="form">
@@ -217,6 +274,7 @@
             </select>
             <input type="date" class="outline-none p-2 mb-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
             <input type="date" class="outline-none p-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
+            <textarea name="" id="" cols="30" rows="8" class="w-full border-1 border-orange rounded-curl outline-none Gotham-Light p-2 font-bold text-sm md:text-l" placeholder="Product Description Here" ></textarea>
           </div>
         </div>
         <button class="bg-shadetrue text-white Gotham-Light my-2 w-full font-bold text-sm p-2 rounded-full" type="submit">Upload</button>
@@ -228,7 +286,7 @@
       <!-- Form to add edit Product start here -->
       <div id="myMo" class="modale">
         <div class="modale-content md:w-1/3">
-          <span class="lose text-2xl font-bold text-right cursor-pointer">&times;</span>
+          <span class="lose text-3xl font-bold text-right cursor-pointer">&times;</span>
           <form action="" method="post">
             <p class="Gotham-Light font-bold text-xl pb-2">Edit Product</p>
             <div class="form">
@@ -251,6 +309,7 @@
               </select>
               <input type="date" class="outline-none p-2 mb-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
               <input type="date" class="outline-none p-2 w-full border-1 border-orange my-2 rounded-full Gotham-Light font-bold text-sm md:text-l">
+              <textarea name="" id="" cols="30" rows="8" class="w-full border-1 border-orange rounded-curl outline-none Gotham-Light p-2 font-bold text-sm md:text-l" placeholder="Product Description Here" ></textarea>
             </div>
           </div>
           <button class="bg-shadetrue text-white Gotham-Light my-2 w-full font-bold text-sm p-2 rounded-full" type="submit">Upload</button>
