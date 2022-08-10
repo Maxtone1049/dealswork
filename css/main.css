@@ -1263,6 +1263,11 @@ video {
   width: 50%;
 }
 
+.text-tiny{
+  font-size: .5rem;
+  line-height: .9rem;
+}
+
 .h-30 {
   height: 5rem;
 }
@@ -1504,10 +1509,5 @@ video {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }

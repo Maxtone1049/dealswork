@@ -28,7 +28,7 @@
       </div>
       <div class="hidden items-center space-x-6 md:flex">
         <div class="p-2 px-3 ">
-          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+          <a href="#"> <i class="fa fa-shopping-cart"></i></a>
         </div>
         <a href="login.html" class="p-2 px-3 text-black text-sm Gotham-Light">Log in</a>
         <a href="contact.html" class="text-black Gotham-Light text-sm">Support</a>
@@ -48,7 +48,7 @@
           <button class="w-1/3 text-white bg-regBlue p-2 rounded-full Gotham-Light font-bold">Search</button>
         </form>
         <div class="p-2 px-3 ">
-          <a href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+          <a href="#"> <i class="fa fa-shopping-cart"></i></a>
         </div>
         <a href="login.html" class="p-2 px-3 text-black text-sm Gotham-Light">Log in</a>
         <a href="contact.html" class="text-black Gotham-Light text-sm">Support</a>
@@ -76,7 +76,9 @@
   <input type="radio" id="cust"  name="acct_type" value="customer">
   <label for="cust" class="text-white">Customer</label>
       </div>
-      <form action="#" class="cust_form Gotham-Light flex flex-col justify-center text-black mt-4 w-full">
+
+      <!-- form customer -->
+      <form action="#"  class="cust_form Gotham-Light flex flex-col justify-center text-black mt-4 w-full">
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/usericon.svg" alt="">
           <input type="text" placeholder="Full Name" class="pl-3 w-full outline-none text-black">
@@ -87,7 +89,7 @@
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/message.svg" alt="">
-          <input type="email" placeholder="Email" class="pl-3 w-full outline-none text-black">
+          <input type="email" required placeholder="Email" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/phone.svg" alt="">
@@ -105,34 +107,36 @@
 <button type="submit" class="mt-4 bg-yao text-white Gotham-Bold w-60 p-4 rounded-full">SIGN UP</button>
         </div>
       </form>
+
+      <!-- Form Merchant -->
       <form action="#" class="merc_form Gotham-Light flex flex-col justify-center text-black mt-4 w-full">
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/usericon.svg" alt="">
-          <input type="text" placeholder="Business Name" class="pl-3 w-full outline-none text-black">
+          <input type="text"  placeholder="Business Name" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/usericon.svg" alt="">
-          <input type="text" placeholder="Full Name" class="pl-3 w-full outline-none text-black">
+          <input type="text"  placeholder="Full Name" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/usericon.svg" alt="">
-          <input type="text" placeholder="Username" class="pl-3 w-full outline-none text-black">
+          <input type="text" required placeholder="Username" ="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/message.svg" alt="">
-          <input type="email" placeholder="Email" class="pl-3 w-full outline-none text-black">
+          <input type="email"  required placeholder="Email" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/phone.svg" alt="">
-          <input type="number" placeholder="Phone Number" class="pl-3 w-full outline-none text-black">
+          <input type="number"  placeholder="Phone Number" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/box.svg" alt="">
-          <input type="text" placeholder="Position in the company" class="pl-3 w-full outline-none text-black">
+          <input type="text"  placeholder="Position in the company" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="bg-white rounded-full p-4 flex my-2">
           <img src="img/lock.svg" alt="">
-          <input type="password" placeholder="Password" class="pl-3 w-full outline-none text-black">
+          <input type="password"  placeholder="Password" class="pl-3 w-full outline-none text-black">
         </div>
         <div class="w-full flex items-center justify-center">
 <button type="submit" class="mt-4 bg-yao text-white Gotham-Bold w-60 p-4 rounded-full">SIGN UP</button>
@@ -204,18 +208,15 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script>
            $('.merc_form').hide();
+           $('.cust_form').hide();
 
 $('#merc').click(function(e) {
-  e.preventDefault();
-  $(this).addClass('active');
   $('.merc_form').show();
   $('.cust_form').hide();
 });
 
 $('#cust').click(function(e) {
-  e.preventDefault();
   $(this).addClass('active');
-  $('.merc_form').removeClass('active');
   $('.cust_form').show();
   $('.merc_form').hide();
 
