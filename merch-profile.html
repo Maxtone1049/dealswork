@@ -65,7 +65,7 @@
   <section class="w-full p-4 bg-img">
     <div class="flex flex-col items-center justify-center w-full">
       <img src="img/review.png" alt="" class="mt-6 rounded-full w-40 object-cover h-40">
-      <span class="p-2 text-darkorange absolute mt-8 -mr-4"><a href="#"><i class="fa fa-plus-circle"></i></a></span>
+      <span class="p-2 text-darkorange absolute mt-8 -mr-4"><a href="#" id="myBtn"><i class="fa fa-plus-circle"></i></a></span>
       <span class="Gotham-Bold text-xl mt-2">Turo Kent</span>
     </div>
     <div
@@ -216,7 +216,19 @@
   </section>
 
 
-
+  <div id="myModal" class="modale">
+    <div class="modale-content md:w-1/3">
+      <span class="cllose text-3xl font-bold cursor-pointer">&times;</span>
+      <form action="" method="post">
+        <p class="Gotham-Light font-bold text-xl pb-2">Upload Image</p>
+        <div class="form">
+        <div>
+          <input type="file" class="border-1 border-orange rounded-curl w-full p-2">
+      </div>
+      <button class="bg-shadetrue text-white Gotham-Light my-2 w-full font-bold text-sm p-2 rounded-full" type="submit">Upload photo</button>
+        </form>
+    </div>
+  </div>
 </body>
 <script src="js/script.js"></script>
 
